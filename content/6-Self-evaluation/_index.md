@@ -1,6 +1,6 @@
 ---
 title: "Self-Assessment"
-date: 2024-01-01
+date: 2026-07-18
 weight: 6
 chapter: false
 pre: " <b> 6. </b> "
@@ -10,30 +10,35 @@ pre: " <b> 6. </b> "
 ⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
 {{% /notice %}}
 
-During my internship at **[Company/Organization Name]** from **[start date]** to **[end date]**, I had the opportunity to learn, practice, and apply the knowledge acquired in school to a real-world working environment.  
-I participated in **[briefly describe the main project or task]**, through which I improved my skills in **[list skills: programming, analysis, reporting, communication, etc.]**.  
+During my participation in the **First Cloud AI Journey** program, I had the opportunity to study, practice, and apply cloud computing concepts through hands-on labs, workshops, and community activities. Throughout the program, I strengthened my understanding of **AWS Cloud Computing, DevOps, Cloud Security, Serverless Architecture, and Generative AI**, while gaining valuable practical experience from real-world scenarios.
 
-In terms of work ethic, I always strived to complete tasks well, complied with workplace regulations, and actively engaged with colleagues to improve work efficiency.
+I completed a variety of hands-on labs involving AWS services such as **Amazon EC2, Amazon S3, Amazon VPC, IAM, Route 53, AWS Lambda, CloudFormation, and Serverless Architecture**. In addition, I participated in technical workshops covering AWS Security, AWS Certified Cloud Practitioner, SLA Monitoring, and Community Sharing Day. These activities significantly improved my technical knowledge, problem-solving abilities, self-learning skills, and teamwork experience.
 
-To objectively reflect on my internship period, I would like to evaluate myself based on the following criteria:
+Regarding my learning attitude, I always tried to complete all assigned labs and worklogs on time, actively explored AWS documentation, and discussed technical issues with mentors and other participants whenever necessary. Participating in community events also helped me improve my communication skills, broaden my professional network, and gain a clearer career direction in Cloud Computing.
 
-| No. | Criteria                            | Description                                                                                      | Good | Fair | Average |
-| --- | ----------------------------------- | ------------------------------------------------------------------------------------------------ | ---- | ---- | ------- |
-| 1   | **Professional knowledge & skills** | Understanding of the field, applying knowledge in practice, proficiency with tools, work quality | ✅    | ☐    | ☐       |
-| 2   | **Ability to learn**                | Ability to absorb new knowledge and learn quickly                                                | ☐    | ✅    | ☐       |
-| 3   | **Proactiveness**                   | Taking initiative, seeking out tasks without waiting for instructions                            | ✅    | ☐    | ☐       |
-| 4   | **Sense of responsibility**         | Completing tasks on time and ensuring quality                                                    | ✅    | ☐    | ☐       |
-| 5   | **Discipline**                      | Adhering to schedules, rules, and work processes                                                 | ☐    | ☐    | ✅       |
-| 6   | **Progressive mindset**             | Willingness to receive feedback and improve oneself                                              | ☐    | ✅    | ☐       |
-| 7   | **Communication**                   | Presenting ideas and reporting work clearly                                                      | ☐    | ✅    | ☐       |
-| 8   | **Teamwork**                        | Working effectively with colleagues and participating in teams                                   | ✅    | ☐    | ☐       |
-| 9   | **Professional conduct**            | Respecting colleagues, partners, and the work environment                                        | ✅    | ☐    | ☐       |
-| 10  | **Problem-solving skills**          | Identifying problems, proposing solutions, and showing creativity                                | ☐    | ✅    | ☐       |
-| 11  | **Contribution to project/team**    | Work effectiveness, innovative ideas, recognition from the team                                  | ✅    | ☐    | ☐       |
-| 12  | **Overall**                         | General evaluation of the entire internship period                                               | ✅    | ☐    | ☐       |
+To objectively reflect on my learning journey throughout the program, I would like to evaluate myself based on the following criteria:
+
+| No. | Criteria | Description | Good | Fair | Average |
+| --- | ----------------------------------- | ------------------------------------------------------------------------------------------------ | :---: | :---: | :---: |
+| 1 | **Professional Knowledge & Skills** | Understanding AWS services and applying cloud knowledge in hands-on labs | ✅ | ☐ | ☐ |
+| 2 | **Ability to Learn** | Quickly learning new technologies and researching technical documentation | ✅ | ☐ | ☐ |
+| 3 | **Proactiveness** | Taking initiative in completing labs and exploring additional learning resources | ✅ | ☐ | ☐ |
+| 4 | **Sense of Responsibility** | Completing all worklogs, labs, and assignments on schedule | ✅ | ☐ | ☐ |
+| 5 | **Discipline** | Following the learning schedule and program requirements consistently | ✅ | ☐ | ☐ |
+| 6 | **Progressive Mindset** | Actively accepting feedback and continuously improving technical knowledge | ✅ | ☐ | ☐ |
+| 7 | **Communication** | Communicating with mentors and fellow learners to solve technical problems | ☐ | ✅ | ☐ |
+| 8 | **Teamwork** | Collaborating effectively during group discussions and learning activities | ✅ | ☐ | ☐ |
+| 9 | **Professional Conduct** | Demonstrating respect, responsibility, and professionalism throughout the program | ✅ | ☐ | ☐ |
+| 10 | **Problem-Solving Skills** | Identifying issues and finding appropriate technical solutions independently | ☐ | ✅ | ☐ |
+| 11 | **Contribution to the Program** | Completing all required activities and actively participating in community events | ✅ | ☐ | ☐ |
+| 12 | **Overall** | Overall performance throughout the First Cloud AI Journey program | ✅ | ☐ | ☐ |
 
 ### Needs Improvement
 
-* Strengthen discipline and strictly comply with the rules and regulations of the company or any organization  
-* Improve problem-solving thinking  
-* Enhance communication skills in both daily interactions and professional contexts, including handling situations effectively
+- Continue improving my knowledge of advanced AWS services such as Amazon EKS, Amazon ECS, Kubernetes, and cloud-native architectures.
+- Strengthen my understanding of the **AWS Well-Architected Framework** and cloud solution design principles.
+- Improve communication and presentation skills when working in teams or presenting technical ideas.
+- Enhance analytical thinking and problem-solving abilities for more complex cloud-based scenarios.
+- Spend more time building real-world cloud projects to gain practical experience and prepare for a future career as a Cloud Engineer.
+
+> Overall, participating in the **First Cloud AI Journey** program provided me with a strong foundation in AWS Cloud Computing, DevOps, Cloud Security, and modern cloud technologies. The knowledge, hands-on experience, and guidance from mentors have increased my confidence and prepared me for future cloud projects and professional AWS certifications.

@@ -1,44 +1,37 @@
 ---
 title: "Events Participated"
-date: 2024-01-01
+date: 2026-07-18
 weight: 4
 chapter: false
 pre: " <b> 4. </b> "
 ---
 
 {{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** for your report, including this warning.
+⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
 {{% /notice %}}
 
-> In this section, you should list and describe in detail the events you have participated in during your internship or work experience.  
-> 
-> Each event should be presented in the format Event 1, Event 2, Event 3…, along with the following details:
-> * Event name
-> * Date and time
-> * Location (if applicable)
-> * Your role in the event (attendee, event support, speaker, etc.)
-> * A brief description of the event’s content and main activities
-> * Outcomes or value gained (lessons learned, new skills, contribution to the team/project)
-> * This listing helps demonstrate your actual participation as well as the soft skills and experience you have gained from each event.
+> This section summarizes the events I participated in during the **First Cloud AI Journey** program. Each event provided valuable opportunities to learn about Cloud Computing, AWS, DevOps, Artificial Intelligence, and professional development. Through these workshops and community sharing sessions, I gained practical knowledge, learned from industry experts, and expanded my understanding of modern cloud technologies.
 
-During my internship, I participated in two events. Each one was a memorable experience that provided new, interesting, and useful knowledge, along with gifts and wonderful moments.
+During my participation in the **First Cloud AI Journey** program, I attended **two community events**. Each event provided valuable technical knowledge, practical experience, and opportunities to connect with AWS experts and fellow learners.
 
-### [Event 1](4.1-Event1/)  
-&emsp;**Event Name:** GenAI-powered App-DB Modernization workshop  
+### [Event 1](4.1-Event1/)
 
-&emsp;**Date & Time:** 09:00, August 13, 2025  
+&emsp;**Event Name:** First Cloud AI Journey – Community Sharing Day
 
-&emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City  
+&emsp;**Date & Time:** June 6, 2026
 
-&emsp;**Role:** Attendee  
+&emsp;**Location:** First Cloud AI Journey Community Sharing Day
+
+&emsp;**Role:** Attendee
 
 ---
 
-### [Event 2](4.2-Event2/)  
-&emsp;**Event Name:** GenAI-powered App-DB Modernization workshop  
+### [Event 2](4.2-Event2/)
 
-&emsp;**Date & Time:** 09:00, August 13, 2025  
+&emsp;**Event Name:** AWS Community Workshop – Security, Cloud Practitioner and SLA Monitoring
 
-&emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City  
+&emsp;**Date & Time:** July 2026
 
-&emsp;**Role:** Attendee  
+&emsp;**Location:** First Cloud AI Journey Workshop
+
+&emsp;**Role:** Attendee

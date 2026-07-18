@@ -11,8 +11,6 @@ pre: "2. "
 # Nền tảng thương mại điện tử Serverless trên AWS
 ## Hệ thống mua sắm cloud-native sẵn sàng cho môi trường sản xuất, xây dựng trên kiến trúc AWS Serverless
 
-
-
 ### 1. Tóm tắt điều hành
 
 Dự án này xây dựng một nền tảng thương mại điện tử hoàn chỉnh, cấp độ sản xuất, dựa hoàn toàn trên các dịch vụ serverless và dịch vụ được quản lý của AWS. Hệ thống hỗ trợ toàn bộ vòng đời mua sắm của khách hàng — duyệt sản phẩm, quản lý giỏ hàng, đặt hàng và theo dõi đơn hàng theo thời gian thực — mà không cần quản lý hay duy trì bất kỳ cơ sở hạ tầng máy chủ nào.

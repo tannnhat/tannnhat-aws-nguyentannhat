@@ -1,59 +1,106 @@
 ---
 title: "Worklog Tuần 9"
-date: 2024-01-01
-weight: 1
+date: 2026-06-15
+weight: 9
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+{{% notice warning %}}
+⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn.
+{{% /notice %}}
 
 ### Mục tiêu tuần 9:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Tìm hiểu các dịch vụ giám sát và bảo mật trên AWS.
+* Hiểu cách theo dõi hiệu suất hệ thống và quản lý quyền truy cập.
+* Thực hành sử dụng Amazon CloudWatch, AWS CloudTrail và AWS IAM.
+
+---
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+|-----|----------|-------------|-----------------|----------------|
+| 2 | Module: Tìm hiểu Amazon CloudWatch và các loại Metrics, Logs | 15/06/2026 | 15/06/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 3 | Lab 48: Tạo CloudWatch Dashboard và CloudWatch Alarm | 16/06/2026 | 16/06/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 4 | Module: AWS CloudTrail và theo dõi hoạt động tài khoản | 17/06/2026 | 17/06/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 5 | Lab 53: Ghi nhận và phân tích sự kiện bằng AWS CloudTrail | 18/06/2026 | 18/06/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 6 | Lab 46: Quản lý User, Group và Policy bằng AWS IAM | 19/06/2026 | 19/06/2026 | https://cloudjourney.awsstudygroup.com/ |
 
-### Kết quả đạt được tuần 9:
+---
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+## Chi tiết Lab đã thực hành
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+---
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+### Lab 48 – Amazon CloudWatch
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+#### 1. Monitoring tài nguyên AWS
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+- Tạo CloudWatch Dashboard.
+- Cấu hình CloudWatch Alarm.
+- Theo dõi CPU, Memory và Network Metrics.
+- Kiểm tra Log Groups.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+**Hiểu:**
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+- Giám sát tài nguyên AWS theo thời gian thực.
+- Thiết lập cảnh báo khi tài nguyên vượt ngưỡng.
 
+---
 
+### Lab 53 – AWS CloudTrail
+
+#### 1. Audit và Logging
+
+- Bật AWS CloudTrail.
+- Theo dõi API Activity.
+- Xem lịch sử các thao tác trên AWS.
+- Phân tích Event History.
+
+**Hiểu:**
+
+- Cơ chế ghi nhận hoạt động trên AWS.
+- Audit và theo dõi bảo mật tài khoản.
+
+---
+
+### Lab 46 – AWS IAM
+
+#### 1. Quản lý quyền truy cập
+
+- Tạo IAM User và Group.
+- Gán IAM Policy.
+- Kiểm tra quyền truy cập.
+- Áp dụng nguyên tắc Least Privilege.
+
+**Hiểu:**
+
+- Quản lý danh tính và phân quyền trên AWS.
+- Bảo vệ tài nguyên bằng IAM Policies.
+
+---
+
+### Module thực hành – Security Monitoring
+
+- Kết hợp CloudWatch và CloudTrail.
+- Theo dõi sự kiện bảo mật.
+- Kiểm tra Log và Alarm.
+
+**Hiểu:**
+
+- Giám sát hệ thống và phát hiện sự cố.
+- Tăng cường bảo mật tài khoản AWS.
+
+---
+
+## Kết quả đạt được:
+
+- Hiểu cách giám sát tài nguyên AWS bằng Amazon CloudWatch.
+- Thành thạo tạo Dashboard và Alarm để theo dõi hệ thống.
+- Biết cách sử dụng AWS CloudTrail để ghi nhận và phân tích hoạt động của tài khoản.
+- Quản lý người dùng, nhóm và quyền truy cập bằng AWS IAM.
+- Áp dụng nguyên tắc **Least Privilege** để tăng cường bảo mật.
+- Kết hợp CloudWatch và CloudTrail để giám sát hệ thống và xử lý sự cố.
+- Nâng cao kỹ năng quản trị và bảo mật hạ tầng AWS thông qua các bài thực hành.

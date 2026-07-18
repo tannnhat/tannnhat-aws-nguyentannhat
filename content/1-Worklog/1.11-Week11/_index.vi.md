@@ -1,6 +1,6 @@
 ---
 title: "Worklog Tuần 11"
-date: 2024-01-01
+date: 2026-06-29
 weight: 2
 chapter: false
 pre: " <b> 1.11. </b> "
@@ -9,51 +9,44 @@ pre: " <b> 1.11. </b> "
 ⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
 {{% /notice %}}
 
-
 ### Mục tiêu tuần 11:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Tìm hiểu các dịch vụ bảo mật và quản lý truy cập trên AWS.
+* Nắm được cách quản lý người dùng, phân quyền và bảo vệ dữ liệu.
+* Thực hành áp dụng các giải pháp bảo mật cơ bản trong môi trường AWS.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 2 | - Tìm hiểu AWS Identity and Access Management (IAM) <br> - Khái niệm User, Group, Role và Policy | 29/06/2026 | 29/06/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 3 | - Thực hành tạo IAM User <br> - Gán quyền bằng Managed Policy và Inline Policy | 30/06/2026 | 30/06/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 4 | - Tìm hiểu AWS Key Management Service (KMS) <br> - Tạo Customer Managed Key (CMK) | 01/07/2026 | 01/07/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 5 | - Nghiên cứu AWS Secrets Manager <br> - Lưu trữ và quản lý thông tin đăng nhập an toàn | 02/07/2026 | 03/07/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 6 | - Thực hành tích hợp IAM với EC2 <br> - Kiểm tra quyền truy cập và đánh giá bảo mật tài khoản AWS | 04/07/2026 | 05/07/2026 | https://cloudjourney.awsstudygroup.com/ |
 
 ### Kết quả đạt được tuần 11:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Hiểu mô hình quản lý danh tính và phân quyền của AWS thông qua IAM.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Thực hành thành công:
+  * Tạo IAM User
+  * Tạo IAM Group
+  * Gán Policy cho User và Role
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Hiểu nguyên tắc **Least Privilege** khi cấp quyền truy cập tài nguyên AWS.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Tìm hiểu và sử dụng AWS KMS để:
+  * Tạo khóa mã hóa
+  * Quản lý Customer Managed Key (CMK)
+  * Hỗ trợ bảo vệ dữ liệu
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+* Biết cách lưu trữ thông tin nhạy cảm bằng AWS Secrets Manager:
+  * Username
+  * Password
+  * API Key
+  * Secret Value
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+* Có khả năng sử dụng IAM Role để cấp quyền cho EC2 truy cập các dịch vụ AWS mà không cần lưu Access Key.
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Nâng cao nhận thức về bảo mật tài khoản AWS và áp dụng các phương pháp quản lý truy cập an toàn theo khuyến nghị của AWS.

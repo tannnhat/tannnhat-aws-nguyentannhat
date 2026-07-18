@@ -1,59 +1,107 @@
 ---
 title: "Worklog Tuần 5"
-date: 2024-01-01
-weight: 1
+date: 2026-05-18
+weight: 5
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+{{% notice warning %}}
+⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn.
+{{% /notice %}}
 
 ### Mục tiêu tuần 5:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Tìm hiểu các dịch vụ triển khai ứng dụng và quản lý hạ tầng trên AWS.
+* Hiểu quy trình triển khai ứng dụng bằng Elastic Beanstalk và CloudFormation.
+* Thực hành tự động hóa việc triển khai tài nguyên AWS.
+
+---
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+|-----|----------|-------------|-----------------|----------------|
+| 2 | Module: Giới thiệu AWS Elastic Beanstalk và quy trình triển khai ứng dụng | 18/05/2026 | 18/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 3 | Lab 14: Triển khai ứng dụng Web với AWS Elastic Beanstalk | 19/05/2026 | 19/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 4 | Module: Tìm hiểu Infrastructure as Code với AWS CloudFormation | 20/05/2026 | 20/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 5 | Lab 17: Tạo và triển khai Stack bằng CloudFormation Template | 21/05/2026 | 21/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 6 | Lab 15: Cập nhật, kiểm tra và xóa tài nguyên thông qua CloudFormation | 22/05/2026 | 22/05/2026 | https://cloudjourney.awsstudygroup.com/ |
 
-### Kết quả đạt được tuần 5:
+---
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+## Chi tiết Lab đã thực hành
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+---
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+### Lab 14 – AWS Elastic Beanstalk
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+#### 1. Triển khai ứng dụng
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+- Tạo môi trường Elastic Beanstalk.
+- Triển khai ứng dụng mẫu.
+- Theo dõi trạng thái triển khai.
+- Kiểm tra truy cập ứng dụng.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+**Hiểu:**
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+- Quy trình triển khai ứng dụng trên AWS.
+- Cách Elastic Beanstalk tự động quản lý hạ tầng.
 
+---
 
+### Lab 17 – AWS CloudFormation
+
+#### 1. Triển khai hạ tầng
+
+- Tạo CloudFormation Template.
+- Khởi tạo Stack.
+- Kiểm tra các tài nguyên được tạo tự động.
+
+**Hiểu:**
+
+- Khái niệm Infrastructure as Code (IaC).
+- Tự động hóa việc triển khai tài nguyên AWS.
+
+---
+
+### Lab 15 – Quản lý CloudFormation Stack
+
+#### 1. Cập nhật và quản lý Stack
+
+- Chỉnh sửa Template.
+- Cập nhật Stack.
+- Xóa Stack sau khi hoàn thành.
+
+**Hiểu:**
+
+- Vòng đời của CloudFormation Stack.
+- Quản lý tài nguyên một cách nhất quán và dễ bảo trì.
+
+---
+
+### Module thực hành – Elastic Beanstalk Monitoring
+
+- Theo dõi trạng thái Environment.
+- Kiểm tra Health Dashboard.
+- Xem Event Log của ứng dụng.
+
+**Hiểu:**
+
+- Giám sát quá trình triển khai.
+- Phát hiện và xử lý lỗi trong quá trình vận hành.
+
+---
+
+## Kết quả đạt được:
+
+- Hiểu quy trình triển khai ứng dụng trên AWS bằng Elastic Beanstalk.
+- Biết cách tạo và quản lý môi trường triển khai ứng dụng.
+- Nắm được khái niệm Infrastructure as Code (IaC).
+- Thành thạo các thao tác cơ bản với AWS CloudFormation:
+  - Tạo Stack.
+  - Cập nhật Stack.
+  - Xóa Stack.
+- Hiểu cách sử dụng Template để tự động triển khai hạ tầng AWS.
+- Có khả năng theo dõi trạng thái ứng dụng và tài nguyên thông qua Elastic Beanstalk Dashboard.
+- Hoàn thành các bài thực hành về triển khai ứng dụng và tự động hóa hạ tầng, tạo nền tảng cho các nội dung DevOps và CI/CD trong các tuần tiếp theo.

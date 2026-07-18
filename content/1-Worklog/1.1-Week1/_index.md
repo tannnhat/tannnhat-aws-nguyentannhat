@@ -1,57 +1,44 @@
 ---
 title: "Week 1 Worklog"
-date: 2024-01-01
+date: 2026-04-20
 weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
+{{% notice warning %}}
+⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report.
+{{% /notice %}}
 
 ### Week 1 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Learn about the AWS Free Tier program and AWS promotional credits.
+* Successfully register an AWS Free Tier account for learning and hands-on practice.
+* Prepare the AWS environment for upcoming cloud labs.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | ---------- | --------------- | ------------------ |
+| 2 | - Learn about AWS Free Tier <br> - Understand AWS promotional credits and eligibility requirements | 04/20/2026 | 04/20/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 3 | - Prepare an email address, phone number, and payment method <br> - Review the AWS account registration process | 04/21/2026 | 04/21/2026 | <https://docs.aws.amazon.com/> |
+| 4 | - Register an AWS Free Tier account <br> - Verify email and phone number <br> - Configure the payment method | 04/22/2026 | 04/22/2026 | <https://aws.amazon.com/free/> |
+| 5 | - Sign in to the AWS Management Console <br> - Explore the AWS Console interface <br> - Verify Free Tier status and available credits | 04/23/2026 | 04/23/2026 | <https://console.aws.amazon.com/> |
+| 6 | - Explore AWS Billing Dashboard <br> - Learn to monitor Free Tier usage <br> - Review account settings and complete documentation | 04/24/2026 | 04/24/2026 | <https://docs.aws.amazon.com/> |
 
 ### Week 1 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Understood the purpose and benefits of the AWS Free Tier program.
+* Learned the requirements for creating an AWS account and receiving promotional credits.
+* Successfully registered and activated an AWS Free Tier account.
+* Completed the account verification process, including:
+  * Email verification
+  * Phone verification
+  * Payment method setup
+* Became familiar with the AWS Management Console and its basic navigation.
+* Learned how to monitor AWS usage through:
+  * AWS Billing Dashboard
+  * Cost Explorer
+  * Free Tier Usage
+* Understood how to track resource usage to avoid unexpected charges.
+* Successfully prepared an AWS environment for future hands-on labs and cloud learning activities.

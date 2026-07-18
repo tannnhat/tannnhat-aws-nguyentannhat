@@ -1,59 +1,40 @@
 ---
 title: "Worklog Tuần 1"
-date: 2024-01-01
+date: 2026-04-20
 weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
 
 ### Mục tiêu tuần 1:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Tìm hiểu chương trình AWS Free Tier và AWS Credit.
+* Đăng ký thành công tài khoản AWS Free Tier và kích hoạt dịch vụ để chuẩn bị cho quá trình học tập, thực hành trên nền tảng AWS.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 2 | - Tìm hiểu AWS Free Tier <br> - Tìm hiểu chương trình AWS Credit và điều kiện tham gia | 20/04/2026 | 20/04/2026 | AWS Skill Builder |
+| 3 | - Chuẩn bị email, số điện thoại và thẻ thanh toán <br> - Đọc các lưu ý khi đăng ký tài khoản AWS | 21/04/2026 | 21/04/2026 | AWS Documentation |
+| 4 | - Đăng ký tài khoản AWS Free Tier <br> - Xác minh email và số điện thoại <br> - Thiết lập phương thức thanh toán | 22/04/2026 | 22/04/2026 | AWS Console |
+| 5 | - Đăng nhập AWS Management Console <br> - Kiểm tra trạng thái tài khoản <br> - Kích hoạt Free Tier và Credit (nếu đủ điều kiện) | 23/04/2026 | 23/04/2026 | AWS Console |
+| 6 | - Kiểm tra hạn mức Free Tier <br> - Tìm hiểu cách quản lý Billing và Cost Explorer <br> - Hoàn thiện báo cáo đăng ký tài khoản | 24/04/2026 | 24/04/2026 | AWS Billing Documentation |
 
 ### Kết quả đạt được tuần 1:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Hiểu được khái niệm AWS Free Tier và các lợi ích khi sử dụng.
+* Nắm được điều kiện để đăng ký và nhận AWS Credit.
+* Đăng ký thành công tài khoản AWS Free Tier.
+* Xác minh đầy đủ thông tin tài khoản gồm:
+  * Email
+  * Số điện thoại
+  * Phương thức thanh toán
+* Đăng nhập và sử dụng được AWS Management Console.
+* Hiểu cách theo dõi chi phí thông qua:
+  * AWS Billing Dashboard
+  * Cost Explorer
+  * Free Tier Usage
+* Biết cách kiểm tra hạn mức sử dụng để tránh phát sinh chi phí ngoài mong muốn.
+* Hoàn thành các bước chuẩn bị môi trường AWS phục vụ cho các bài thực hành trong những tuần tiếp theo.

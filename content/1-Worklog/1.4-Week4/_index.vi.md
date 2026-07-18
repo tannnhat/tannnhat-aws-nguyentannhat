@@ -1,59 +1,122 @@
 ---
 title: "Worklog Tuần 4"
-date: 2024-01-01
-weight: 1
+date: 2026-05-11
+weight: 4
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+{{% notice warning %}}
+⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn.
+{{% /notice %}}
 
 ### Mục tiêu tuần 4:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Tìm hiểu các dịch vụ mạng và giám sát trên AWS.
+* Thực hành triển khai hệ thống mạng cơ bản, giám sát tài nguyên và quản lý DNS.
+* Nâng cao kỹ năng cấu hình và kết nối các dịch vụ AWS.
+
+---
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+|-----|----------|-------------|-----------------|----------------|
+| 2 | Lab 08: Cấu hình Route 53 và quản lý DNS Domain | 11/05/2026 | 11/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 3 | Module: Tìm hiểu Elastic Load Balancer và Auto Scaling Group | 12/05/2026 | 12/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 4 | Lab 12: Thiết lập CloudWatch Alarm và SNS Notification | 13/05/2026 | 13/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 5 | Module: Amazon VPC, Route Table và Internet Gateway | 14/05/2026 | 14/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 6 | Lab 09: Triển khai VPC, Public Subnet và Security Group cho EC2 | 15/05/2026 | 15/05/2026 | https://cloudjourney.awsstudygroup.com/ |
 
-### Kết quả đạt được tuần 4:
+---
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+## Chi tiết Lab đã thực hành
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+---
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+### Lab 08 – Amazon Route 53
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+#### 1. Quản lý DNS
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+- Tạo Hosted Zone.
+- Thêm bản ghi A Record và CNAME.
+- Kiểm tra khả năng phân giải tên miền.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+**Hiểu:**
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+- Cách Route 53 quản lý DNS.
+- Vai trò của Hosted Zone và các loại bản ghi DNS.
 
+---
 
+### Lab 12 – CloudWatch & SNS
+
+#### 1. Giám sát tài nguyên
+
+- Theo dõi CPU Utilization của EC2.
+- Tạo CloudWatch Alarm.
+- Gửi thông báo qua Amazon SNS khi vượt ngưỡng.
+
+**Hiểu:**
+
+- Cách giám sát tài nguyên theo thời gian thực.
+- Thiết lập cảnh báo tự động khi hệ thống gặp sự cố.
+
+---
+
+### Lab 09 – Amazon VPC
+
+#### 1. Cấu hình mạng
+
+- Tạo VPC với CIDR Block.
+- Tạo Public Subnet.
+- Gắn Internet Gateway.
+- Cấu hình Route Table.
+- Tạo Security Group cho EC2.
+
+**Hiểu:**
+
+- Kiến trúc mạng cơ bản trong AWS.
+- Cách cho phép EC2 truy cập Internet.
+
+---
+
+### Module thực hành – Elastic Load Balancer
+
+- Tìm hiểu Application Load Balancer (ALB).
+- Tìm hiểu Target Group.
+- Phân phối lưu lượng truy cập đến nhiều EC2.
+
+**Hiểu:**
+
+- Cơ chế cân bằng tải.
+- Tăng tính sẵn sàng của ứng dụng.
+
+---
+
+### Module thực hành – Auto Scaling
+
+- Tìm hiểu Launch Template.
+- Tạo Auto Scaling Group.
+- Thiết lập chính sách mở rộng và thu hẹp tài nguyên.
+
+**Hiểu:**
+
+- Tự động mở rộng hệ thống theo nhu cầu.
+- Tối ưu hiệu năng và chi phí.
+
+---
+
+## Kết quả đạt được:
+
+- Hiểu nguyên lý hoạt động của Amazon VPC và các thành phần mạng cơ bản.
+- Biết cách cấu hình:
+  - Internet Gateway.
+  - Route Table.
+  - Security Group.
+- Thành thạo các thao tác cơ bản với Amazon Route 53:
+  - Tạo Hosted Zone.
+  - Quản lý DNS Records.
+- Hiểu cơ chế hoạt động của Elastic Load Balancer và Auto Scaling Group.
+- Biết sử dụng CloudWatch kết hợp Amazon SNS để giám sát và gửi cảnh báo.
+- Có khả năng triển khai một hệ thống AWS cơ bản với mạng, DNS, cân bằng tải và giám sát tài nguyên.

@@ -1,6 +1,6 @@
 ---
 title: "Translated Blogs"
-date: 2024-01-01
+date: 2026-07-08
 weight: 3
 chapter: false
 pre: " <b> 3. </b> "
@@ -10,22 +10,28 @@ pre: " <b> 3. </b> "
 ⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
 {{% /notice %}}
 
-This section will list and introduce the blogs you have translated. For example:
+This section lists and briefly introduces the technical blogs that were translated during the internship. Through these translation tasks, I improved my understanding of AWS cloud services, modern software architecture, and best practices for designing cloud-native applications.
 
-###  [Blog 1 - Getting started with healthcare data lakes: Using microservices](3.1-Blog1/)
-This blog introduces how to start building a data lake in the healthcare sector by applying a microservices architecture. You will learn why data lakes are important for storing and analyzing diverse healthcare data (electronic medical records, lab test data, medical IoT devices…), how microservices help make the system more flexible, scalable, and easier to maintain. The article also guides you through the steps to set up the environment, organize the data processing pipeline, and ensure compliance with security & privacy standards such as HIPAA.
+### [Blog 1 - Getting Started with Healthcare Data Lakes: Using Microservices](3.1-Blog1/)
 
-###  [Blog 2 - ...](3.2-Blog2/)
-This blog introduces how to start building a data lake in the healthcare sector by applying a microservices architecture. You will learn why data lakes are important for storing and analyzing diverse healthcare data (electronic medical records, lab test data, medical IoT devices…), how microservices help make the system more flexible, scalable, and easier to maintain. The article also guides you through the steps to set up the environment, organize the data processing pipeline, and ensure compliance with security & privacy standards such as HIPAA.
+This blog explains how to build a healthcare data lake using a microservices architecture. It discusses the importance of securely storing and processing healthcare data, introduces the concept of data lakes, and explains how microservices improve scalability, flexibility, and maintainability. It also presents the overall system architecture and the AWS services involved.
 
-###  [Blog 3 - ...](3.3-Blog3/)
-This blog introduces how to start building a data lake in the healthcare sector by applying a microservices architecture. You will learn why data lakes are important for storing and analyzing diverse healthcare data (electronic medical records, lab test data, medical IoT devices…), how microservices help make the system more flexible, scalable, and easier to maintain. The article also guides you through the steps to set up the environment, organize the data processing pipeline, and ensure compliance with security & privacy standards such as HIPAA.
+### [Blog 2 - Getting Started with Healthcare Data Lakes: Using Microservices (Part 2)](3.2-Blog2/)
 
-###  [Blog 4 - ...](3.4-Blog4/)
-This blog introduces how to start building a data lake in the healthcare sector by applying a microservices architecture. You will learn why data lakes are important for storing and analyzing diverse healthcare data (electronic medical records, lab test data, medical IoT devices…), how microservices help make the system more flexible, scalable, and easier to maintain. The article also guides you through the steps to set up the environment, organize the data processing pipeline, and ensure compliance with security & privacy standards such as HIPAA.
+This blog continues exploring the healthcare data lake solution by focusing on communication between microservices. It introduces publish/subscribe architecture, explains the responsibilities of core services such as Amazon S3, Amazon SNS, AWS Lambda, and DynamoDB, and demonstrates how these AWS services work together to process healthcare data efficiently.
 
-###  [Blog 5 - ...](3.5-Blog5/)
-This blog introduces how to start building a data lake in the healthcare sector by applying a microservices architecture. You will learn why data lakes are important for storing and analyzing diverse healthcare data (electronic medical records, lab test data, medical IoT devices…), how microservices help make the system more flexible, scalable, and easier to maintain. The article also guides you through the steps to set up the environment, organize the data processing pipeline, and ensure compliance with security & privacy standards such as HIPAA.
+### [Blog 3 - Healthcare Data Lake Architecture and AWS Integration](3.3-Blog3/)
 
-###  [Blog 6 - ...](3.6-Blog6/)
-This blog introduces how to start building a data lake in the healthcare sector by applying a microservices architecture. You will learn why data lakes are important for storing and analyzing diverse healthcare data (electronic medical records, lab test data, medical IoT devices…), how microservices help make the system more flexible, scalable, and easier to maintain. The article also guides you through the steps to set up the environment, organize the data processing pipeline, and ensure compliance with security & privacy standards such as HIPAA.
+This blog focuses on the architectural design of a cloud-based healthcare data lake. It describes how different AWS services are integrated to build a reliable and scalable platform while ensuring secure communication, efficient data processing, and simplified resource management.
+
+### [Blog 4 - Building Event-Driven Applications with AWS Services](3.4-Blog4/)
+
+This blog introduces event-driven architecture in AWS and explains how services such as Amazon EventBridge, Amazon SNS, AWS Lambda, and Step Functions can be combined to create loosely coupled applications that are scalable, resilient, and easy to maintain.
+
+### [Blog 5 - Managing Cloud Infrastructure with AWS CloudFormation](3.5-Blog5/)
+
+This blog describes Infrastructure as Code (IaC) using AWS CloudFormation. It explains how CloudFormation templates can automate infrastructure deployment, improve consistency across environments, and simplify the management of cloud resources through reusable templates.
+
+### [Blog 6 - Best Practices for AWS Cloud Security and Resource Management](3.6-Blog6/)
+
+This blog summarizes recommended practices for managing AWS resources securely. It covers topics such as identity and access management, data protection, monitoring, resource optimization, and cost management to help build secure, reliable, and well-governed cloud environments.

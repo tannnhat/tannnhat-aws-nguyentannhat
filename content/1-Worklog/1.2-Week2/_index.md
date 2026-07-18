@@ -1,57 +1,43 @@
 ---
 title: "Week 2 Worklog"
-date: 2024-01-01
-weight: 1
+date: 2026-04-27
+weight: 2
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
+{{% notice warning %}}
+⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report.
+{{% /notice %}}
 
 ### Week 2 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Complete the **AWS Cloud for Beginner** course.
+* Understand the core AWS services and cloud computing concepts.
+* Gain hands-on experience with basic AWS resources and management tools.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | ---------- | --------------- | ------------------ |
+| 2 | - Learn the fundamentals of Cloud Computing <br> - Explore AWS Global Infrastructure (Regions, Availability Zones, Edge Locations) | 04/27/2026 | 04/27/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 3 | - Learn AWS Identity and Access Management (IAM) <br> - Understand users, groups, roles, and security best practices | 04/28/2026 | 04/28/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 4 | - **Practice:** <br>&emsp; + Create IAM Users and Groups <br>&emsp; + Assign permissions using IAM Policies <br>&emsp; + Enable Multi-Factor Authentication (MFA) | 04/29/2026 | 04/29/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 5 | - Learn Amazon EC2 fundamentals <br>&emsp; + AMI <br>&emsp; + Instance Types <br>&emsp; + Security Groups <br> - Launch and manage EC2 instances | 04/30/2026 | 04/30/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 6 | - **Practice:** <br>&emsp; + Create an Amazon S3 Bucket <br>&emsp; + Upload and manage objects <br>&emsp; + Explore AWS CloudWatch and Billing Dashboard | 05/01/2026 | 05/01/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
 ### Week 2 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Understood the fundamentals of cloud computing and AWS Global Infrastructure.
+* Learned the purpose and usage of core AWS services, including:
+  * Amazon EC2
+  * Amazon S3
+  * AWS IAM
+  * Amazon CloudWatch
+* Successfully created and managed IAM users, groups, and permissions.
+* Enabled Multi-Factor Authentication (MFA) to improve account security.
+* Launched and managed an Amazon EC2 instance.
+* Created and managed an Amazon S3 bucket, including uploading and organizing objects.
+* Explored AWS CloudWatch for basic monitoring and AWS Billing Dashboard for tracking Free Tier usage.
+* Gained practical experience using the AWS Management Console to deploy and manage cloud resources.
+* Built a solid foundation for more advanced AWS networking and architecture labs in the following weeks.

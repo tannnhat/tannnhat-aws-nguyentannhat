@@ -1,126 +1,148 @@
 ---
 title: "Blog 1"
-date: 2024-01-01
+date: 2026-04-22
 weight: 1
 chapter: false
 pre: " <b> 3.1. </b> "
 ---
+
 {{% notice warning %}}
 ⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
 {{% /notice %}}
 
 # Getting Started with Healthcare Data Lakes: Using Microservices
 
-Data lakes can help hospitals and healthcare facilities turn data into business insights, maintain business continuity, and protect patient privacy. A **data lake** is a centralized, managed, and secure repository to store all your data, both in its raw and processed forms for analysis. Data lakes allow you to break down data silos and combine different types of analytics to gain insights and make better business decisions.
+Data lakes can help hospitals and healthcare organizations transform data into valuable business insights while ensuring business continuity and protecting patient privacy. A **data lake** is a centralized, managed, and secure repository that stores all types of data, both raw and processed, for analytics. It enables organizations to break down data silos, combine different analytical approaches, and make better business decisions.
 
-This blog post is part of a larger series on getting started with setting up a healthcare data lake. In my final post of the series, *“Getting Started with Healthcare Data Lakes: Diving into Amazon Cognito”*, I focused on the specifics of using Amazon Cognito and Attribute Based Access Control (ABAC) to authenticate and authorize users in the healthcare data lake solution. In this blog, I detail how the solution evolved at a foundational level, including the design decisions I made and the additional features used. You can access the code samples for the solution in this Git repo for reference.
-
----
-
-## Architecture Guidance
-
-The main change since the last presentation of the overall architecture is the decomposition of a single service into a set of smaller services to improve maintainability and flexibility. Integrating a large volume of diverse healthcare data often requires specialized connectors for each format; by keeping them encapsulated separately as microservices, we can add, remove, and modify each connector without affecting the others. The microservices are loosely coupled via publish/subscribe messaging centered in what I call the “pub/sub hub.”
-
-This solution represents what I would consider another reasonable sprint iteration from my last post. The scope is still limited to the ingestion and basic parsing of **HL7v2 messages** formatted in **Encoding Rules 7 (ER7)** through a REST interface.
-
-**The solution architecture is now as follows:**
-
-> *Figure 1. Overall architecture; colored boxes represent distinct services.*
+This blog post is part of a larger series about building healthcare data lakes. In the previous article, *"Getting Started with Healthcare Data Lakes: Diving into Amazon Cognito"*, I explained how Amazon Cognito and Attribute-Based Access Control (ABAC) can be used to authenticate and authorize users. In this article, I describe the evolution of the solution architecture, the design decisions made, and the additional AWS services that improve scalability and maintainability.
 
 ---
 
-While the term *microservices* has some inherent ambiguity, certain traits are common:  
-- Small, autonomous, loosely coupled  
-- Reusable, communicating through well-defined interfaces  
-- Specialized to do one thing well  
-- Often implemented in an **event-driven architecture**
+## Architecture Overview
 
-When determining where to draw boundaries between microservices, consider:  
-- **Intrinsic**: technology used, performance, reliability, scalability  
-- **Extrinsic**: dependent functionality, rate of change, reusability  
-- **Human**: team ownership, managing *cognitive load*
+The biggest architectural improvement is breaking a monolithic application into multiple **microservices**. Healthcare systems usually process many different data formats, so each connector can be implemented as an independent microservice. This design allows developers to update or replace one service without affecting the others.
+
+Communication between services is handled through a centralized **Publish/Subscribe (Pub/Sub) Hub**, creating a loosely coupled and highly scalable architecture.
+
+The current implementation focuses on importing and parsing **HL7v2** messages encoded in **ER7 (Encoding Rules Version 7)** through a REST API.
 
 ---
 
-## Technology Choices and Communication Scope
+## Characteristics of Microservices
 
-| Communication scope                       | Technologies / patterns to consider                                                        |
-| ----------------------------------------- | ------------------------------------------------------------------------------------------ |
-| Within a single microservice              | Amazon Simple Queue Service (Amazon SQS), AWS Step Functions                               |
-| Between microservices in a single service | AWS CloudFormation cross-stack references, Amazon Simple Notification Service (Amazon SNS) |
-| Between services                          | Amazon EventBridge, AWS Cloud Map, Amazon API Gateway                                      |
+Microservices generally have the following characteristics:
+
+- Small and independent
+- Loosely coupled
+- Reusable through well-defined APIs
+- Designed to perform a single responsibility
+- Commonly deployed using an **event-driven architecture**
+
+When defining microservice boundaries, consider:
+
+- **Technical factors:** performance, reliability, scalability, technologies used
+- **Business factors:** dependencies, frequency of change, reusability
+- **Team factors:** ownership and cognitive load
+
+---
+
+## Communication Technologies
+
+| Communication Scope | AWS Services |
+| ------------------- | ------------ |
+| Within one microservice | Amazon SQS, AWS Step Functions |
+| Between microservices | AWS CloudFormation Cross-Stack References, Amazon SNS |
+| Between different services | Amazon EventBridge, AWS Cloud Map, Amazon API Gateway |
 
 ---
 
 ## The Pub/Sub Hub
 
-Using a **hub-and-spoke** architecture (or message broker) works well with a small number of tightly related microservices.  
-- Each microservice depends only on the *hub*  
-- Inter-microservice connections are limited to the contents of the published message  
-- Reduces the number of synchronous calls since pub/sub is a one-way asynchronous *push*
+The **Hub-and-Spoke** architecture works well when several microservices need to exchange events.
 
-Drawback: **coordination and monitoring** are needed to avoid microservices processing the wrong message.
+Benefits include:
+
+- Each microservice communicates only with the hub.
+- Services remain loosely coupled.
+- Asynchronous messaging reduces synchronous API calls.
+- Easier to extend the system by adding new subscribers.
+
+A limitation is that event routing must be monitored carefully to prevent incorrect message processing.
 
 ---
 
 ## Core Microservice
 
-Provides foundational data and communication layer, including:  
-- **Amazon S3** bucket for data  
-- **Amazon DynamoDB** for data catalog  
-- **AWS Lambda** to write messages into the data lake and catalog  
-- **Amazon SNS** topic as the *hub*  
-- **Amazon S3** bucket for artifacts such as Lambda code
+The Core Microservice provides the foundation of the system, including:
 
-> Only allow indirect write access to the data lake through a Lambda function → ensures consistency.
+- Amazon S3 bucket for storing data
+- Amazon DynamoDB for the metadata catalog
+- AWS Lambda functions for processing data
+- Amazon SNS topic acting as the central messaging hub
+- Amazon S3 bucket for deployment artifacts
+
+Only Lambda functions are allowed to write data into the data lake, ensuring consistency and centralized validation.
 
 ---
 
 ## Front Door Microservice
 
-- Provides an API Gateway for external REST interaction  
-- Authentication & authorization based on **OIDC** via **Amazon Cognito**  
-- Self-managed *deduplication* mechanism using DynamoDB instead of SNS FIFO because:  
-  1. SNS deduplication TTL is only 5 minutes  
-  2. SNS FIFO requires SQS FIFO  
-  3. Ability to proactively notify the sender that the message is a duplicate  
+The Front Door Microservice provides external REST APIs through Amazon API Gateway.
+
+Authentication and authorization are implemented using **Amazon Cognito** with **OpenID Connect (OIDC)**.
+
+Instead of using SNS FIFO deduplication, DynamoDB is used because:
+
+1. SNS deduplication lasts only five minutes.
+2. SNS FIFO requires SQS FIFO.
+3. Duplicate requests can be detected and reported immediately.
 
 ---
 
 ## Staging ER7 Microservice
 
-- Lambda “trigger” subscribed to the pub/sub hub, filtering messages by attribute  
-- Step Functions Express Workflow to convert ER7 → JSON  
-- Two Lambdas:  
-  1. Fix ER7 formatting (newline, carriage return)  
-  2. Parsing logic  
-- Result or error is pushed back into the pub/sub hub  
+This microservice processes incoming HL7 ER7 messages.
+
+Workflow:
+
+- A Lambda trigger subscribes to SNS events.
+- AWS Step Functions orchestrate the workflow.
+- One Lambda normalizes ER7 formatting.
+- Another Lambda parses ER7 into JSON.
+- Results are published back to the Pub/Sub Hub.
 
 ---
 
-## New Features in the Solution
+## New Feature: AWS CloudFormation Cross-Stack References
 
-### 1. AWS CloudFormation Cross-Stack References
-Example *outputs* in the core microservice:
+Cross-stack references allow infrastructure resources to be shared between multiple CloudFormation stacks.
+
+Example:
+
 ```yaml
 Outputs:
   Bucket:
     Value: !Ref Bucket
     Export:
       Name: !Sub ${AWS::StackName}-Bucket
+
   ArtifactBucket:
     Value: !Ref ArtifactBucket
     Export:
       Name: !Sub ${AWS::StackName}-ArtifactBucket
+
   Topic:
     Value: !Ref Topic
     Export:
       Name: !Sub ${AWS::StackName}-Topic
+
   Catalog:
     Value: !Ref Catalog
     Export:
       Name: !Sub ${AWS::StackName}-Catalog
+
   CatalogArn:
     Value: !GetAtt Catalog.Arn
     Export:
       Name: !Sub ${AWS::StackName}-CatalogArn
+```

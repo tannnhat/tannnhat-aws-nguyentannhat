@@ -1,57 +1,54 @@
 ---
 title: "Week 10 Worklog"
-date: 2024-01-01
+date: 2026-06-22
 weight: 2
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
-{{% notice warning %}} 
+{{% notice warning %}}
 ⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
 {{% /notice %}}
 
-
 ### Week 10 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Gain practical experience with AWS monitoring, automation, and storage services.
+* Learn how to manage cloud resources efficiently using AWS management tools.
+* Strengthen knowledge of monitoring, logging, and infrastructure optimization.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| 2 | - Learn Amazon CloudWatch <br> - Explore metrics, dashboards, and alarms | 06/22/2026 | 06/22/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 3 | - Practice creating CloudWatch Alarms <br> - Configure SNS notifications | 06/23/2026 | 06/23/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 4 | - Study Amazon S3 lifecycle policies <br> - Configure versioning and storage classes | 06/24/2026 | 06/24/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 5 | - Learn AWS Systems Manager <br> - Practice Session Manager and Parameter Store | 06/25/2026 | 06/26/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 6 | - Review AWS monitoring best practices <br> - Perform hands-on exercises integrating CloudWatch with EC2 | 06/27/2026 | 06/28/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
 ### Week 10 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Gained practical knowledge of Amazon CloudWatch for monitoring AWS resources.
 
-* Successfully created and configured an AWS Free Tier account.
+* Successfully created and configured:
+  * CloudWatch Metrics
+  * CloudWatch Alarms
+  * SNS Notifications
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Learned how to monitor EC2 performance using:
+  * CPU Utilization
+  * Network Traffic
+  * Disk Metrics
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Explored Amazon S3 management features, including:
+  * Versioning
+  * Lifecycle Policies
+  * Storage Classes
 
-* Used AWS CLI to perform basic operations such as:
+* Practiced AWS Systems Manager features:
+  * Session Manager
+  * Parameter Store
+  * Resource Management
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+* Improved the ability to monitor cloud infrastructure and respond to system events using AWS monitoring services.
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Enhanced understanding of operational best practices for maintaining AWS resources efficiently.

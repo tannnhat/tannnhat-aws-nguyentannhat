@@ -1,59 +1,124 @@
 ---
 title: "Worklog Tuần 3"
-date: 2024-01-01
-weight: 1
+date: 2026-05-04
+weight: 3
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+{{% notice warning %}}
+⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn.
+{{% /notice %}}
 
 ### Mục tiêu tuần 3:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Tìm hiểu các dịch vụ lưu trữ và cơ sở dữ liệu trên AWS.
+* Hiểu cách quản lý dữ liệu bằng Amazon S3 và Amazon RDS.
+* Thực hành triển khai, quản lý và giám sát các dịch vụ lưu trữ trên AWS.
+
+---
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+|-----|----------|-------------|-----------------|----------------|
+| 2 | Module 03-01: Amazon S3 (Bucket, Object, Storage Class) | 04/05/2026 | 04/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 3 | Module 03-02: Amazon RDS và các hệ quản trị cơ sở dữ liệu | 05/05/2026 | 05/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 4 | Lab 05: Tạo và quản lý Amazon S3 Bucket | 06/05/2026 | 06/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 5 | Lab 06: Triển khai Amazon RDS MySQL và kết nối từ EC2 | 07/05/2026 | 07/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 6 | Lab 07: Backup, Snapshot và Monitoring với CloudWatch | 08/05/2026 | 08/05/2026 | https://cloudjourney.awsstudygroup.com/ |
 
-### Kết quả đạt được tuần 3:
+---
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+## Chi tiết Lab đã thực hành
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+---
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+### Lab 05 – Amazon S3
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+#### 1. Tạo và quản lý Bucket
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+- Tạo Amazon S3 Bucket.
+- Upload và Download Object.
+- Tạo thư mục và quản lý dữ liệu.
+- Thiết lập Bucket Policy.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+**Hiểu:**
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+- Cách lưu trữ dữ liệu bằng Object Storage.
+- Quản lý quyền truy cập đối với Bucket.
 
+---
 
+#### 2. Quản lý dữ liệu
+
+- Bật Versioning.
+- Xóa và khôi phục Object.
+- Tìm hiểu Storage Classes.
+
+**Hiểu:**
+
+- Cách bảo vệ dữ liệu trên Amazon S3.
+- Tối ưu chi phí lưu trữ.
+
+---
+
+### Lab 06 – Amazon RDS
+
+#### 1. Triển khai cơ sở dữ liệu
+
+- Tạo RDS MySQL Instance.
+- Cấu hình Security Group.
+- Thiết lập thông tin Database.
+
+**Hiểu:**
+
+- Quy trình triển khai cơ sở dữ liệu được quản lý trên AWS.
+
+---
+
+#### 2. Kết nối Database
+
+- Kết nối RDS từ EC2.
+- Kiểm tra kết nối bằng MySQL Client.
+- Thực hiện tạo bảng và thêm dữ liệu.
+
+**Hiểu:**
+
+- Cách ứng dụng kết nối tới Amazon RDS.
+
+---
+
+### Lab 07 – Backup và Monitoring
+
+#### 1. Sao lưu dữ liệu
+
+- Tạo Database Snapshot.
+- Khôi phục Database từ Snapshot.
+- Kiểm tra Backup tự động.
+
+#### 2. Giám sát hệ thống
+
+- Theo dõi CPU và Storage trên CloudWatch.
+- Thiết lập Alarm cơ bản.
+- Kiểm tra trạng thái hoạt động của RDS.
+
+**Hiểu:**
+
+- Cách bảo vệ dữ liệu bằng Snapshot.
+- Giám sát hiệu năng của dịch vụ AWS.
+
+---
+
+## Kết quả đạt được:
+
+- Hiểu cách hoạt động của Amazon S3 và các Storage Classes.
+- Thành thạo các thao tác cơ bản trên Amazon S3:
+  - Tạo Bucket.
+  - Upload/Download dữ liệu.
+  - Thiết lập Versioning.
+- Triển khai thành công Amazon RDS MySQL.
+- Kết nối được EC2 với RDS để thực hiện thao tác trên cơ sở dữ liệu.
+- Biết cách tạo Snapshot và khôi phục dữ liệu khi cần thiết.
+- Sử dụng CloudWatch để theo dõi tài nguyên và thiết lập cảnh báo cơ bản.
+- Hoàn thành các bài thực hành về lưu trữ và cơ sở dữ liệu, tạo nền tảng cho các nội dung AWS nâng cao ở những tuần tiếp theo.

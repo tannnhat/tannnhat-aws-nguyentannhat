@@ -1,6 +1,6 @@
 ---
 title: "Worklog Tuần 10"
-date: 2024-01-01
+date: 2026-06-22
 weight: 2
 chapter: false
 pre: " <b> 1.10. </b> "
@@ -9,51 +9,46 @@ pre: " <b> 1.10. </b> "
 ⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
 {{% /notice %}}
 
-
 ### Mục tiêu tuần 10:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Thực hành các dịch vụ giám sát, lưu trữ và quản trị trên AWS.
+* Hiểu cách theo dõi, cảnh báo và tối ưu tài nguyên trên nền tảng AWS.
+* Nâng cao kỹ năng quản lý hệ thống bằng các công cụ quản trị của AWS.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 2 | - Tìm hiểu Amazon CloudWatch <br> - Khám phá Metrics, Dashboard và Alarm | 22/06/2026 | 22/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 3 | - Thực hành tạo CloudWatch Alarm <br> - Cấu hình thông báo bằng Amazon SNS | 23/06/2026 | 23/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 4 | - Tìm hiểu Amazon S3 Lifecycle <br> - Cấu hình Versioning và Storage Class | 24/06/2026 | 24/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 5 | - Nghiên cứu AWS Systems Manager <br> - Thực hành Session Manager và Parameter Store | 25/06/2026 | 26/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 6 | - Ôn tập các phương pháp giám sát hệ thống trên AWS <br> - Thực hành tích hợp CloudWatch với EC2 để theo dõi hiệu năng | 27/06/2026 | 28/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
 ### Kết quả đạt được tuần 10:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Hiểu và sử dụng được Amazon CloudWatch để giám sát tài nguyên AWS.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Đã tạo và cấu hình thành công:
+  * CloudWatch Metrics
+  * CloudWatch Alarms
+  * Amazon SNS Notifications
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Biết cách theo dõi hiệu năng của EC2 thông qua:
+  * CPU Utilization
+  * Network Traffic
+  * Disk Metrics
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Nắm được các tính năng quản lý của Amazon S3:
+  * Versioning
+  * Lifecycle Policies
+  * Storage Classes
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+* Thực hành các tính năng của AWS Systems Manager:
+  * Session Manager
+  * Parameter Store
+  * Quản lý tài nguyên AWS
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+* Có khả năng giám sát hạ tầng AWS và xử lý các sự kiện thông qua CloudWatch và SNS.
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Nâng cao hiểu biết về các phương pháp quản trị, giám sát và tối ưu tài nguyên trên nền tảng AWS.

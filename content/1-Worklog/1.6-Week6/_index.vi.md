@@ -1,58 +1,105 @@
 ---
 title: "Worklog Tuần 6"
-date: 2024-01-01
-weight: 1
+date: 2026-05-25
+weight: 6
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+{{% notice warning %}}
+⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn.
+{{% /notice %}}
 
 ### Mục tiêu tuần 6:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Tìm hiểu các dịch vụ Serverless trên AWS.
+* Hiểu cách xây dựng ứng dụng không cần quản lý máy chủ.
+* Thực hành triển khai API và xử lý sự kiện bằng AWS Lambda.
+
+---
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+|-----|----------|-------------|-----------------|----------------|
+| 2 | Module: Tìm hiểu AWS Lambda và kiến trúc Serverless | 25/05/2026 | 25/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 3 | Lab 22: Tạo và triển khai AWS Lambda Function | 26/05/2026 | 26/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 4 | Module: Amazon API Gateway và tích hợp với Lambda | 27/05/2026 | 27/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 5 | Lab 18: Xây dựng REST API bằng API Gateway và Lambda | 28/05/2026 | 28/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 6 | Lab 25: Tích hợp Amazon S3 Trigger với AWS Lambda và kiểm tra kết quả | 29/05/2026 | 29/05/2026 | https://cloudjourney.awsstudygroup.com/ |
 
-### Kết quả đạt được tuần 6:
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+---
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+## Chi tiết Lab đã thực hành
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+---
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+### Lab 22 – AWS Lambda
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+#### 1. Tạo Lambda Function
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+- Tạo Lambda Function mới.
+- Chọn Runtime phù hợp.
+- Viết và triển khai hàm xử lý.
+- Thực hiện Test Event.
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+**Hiểu:**
 
+- Mô hình Serverless Computing.
+- Chu trình thực thi của AWS Lambda.
 
+---
+
+### Lab 18 – Amazon API Gateway
+
+#### 1. Xây dựng REST API
+
+- Tạo REST API.
+- Tích hợp với AWS Lambda.
+- Triển khai API Stage.
+- Kiểm tra Endpoint bằng trình duyệt hoặc Postman.
+
+**Hiểu:**
+
+- Cách API Gateway chuyển yêu cầu đến Lambda.
+- Quy trình triển khai API trên AWS.
+
+---
+
+### Lab 25 – Amazon S3 Trigger
+
+#### 1. Kích hoạt Lambda bằng sự kiện
+
+- Tạo S3 Event Notification.
+- Liên kết Bucket với Lambda Function.
+- Upload tệp lên S3 để kích hoạt Lambda.
+
+**Hiểu:**
+
+- Kiến trúc Event-Driven.
+- Tự động xử lý dữ liệu khi có sự kiện phát sinh.
+
+---
+
+### Module thực hành – Monitoring Serverless
+
+- Theo dõi Log trên Amazon CloudWatch.
+- Kiểm tra thời gian thực thi Lambda.
+- Xem lịch sử Invoke và Error Log.
+
+**Hiểu:**
+
+- Giám sát và xử lý lỗi của ứng dụng Serverless.
+- Phân tích hiệu năng của Lambda Function.
+
+---
+
+## Kết quả đạt được:
+
+- Hiểu kiến trúc Serverless trên nền tảng AWS.
+- Triển khai thành công AWS Lambda Function và thực hiện kiểm thử.
+- Xây dựng REST API bằng Amazon API Gateway kết hợp với Lambda.
+- Cấu hình Amazon S3 Trigger để tự động kích hoạt Lambda Function.
+- Biết cách sử dụng Amazon CloudWatch để theo dõi Log và giám sát hoạt động của Lambda.
+- Hiểu cơ chế Event-Driven Architecture và cách các dịch vụ AWS tích hợp với nhau.
+- Hoàn thành các bài thực hành về Serverless Computing, tạo nền tảng cho việc phát triển ứng dụng hiện đại trên AWS.

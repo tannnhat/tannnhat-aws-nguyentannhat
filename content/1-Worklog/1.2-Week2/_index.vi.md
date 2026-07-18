@@ -1,59 +1,144 @@
 ---
 title: "Worklog Tuần 2"
-date: 2024-01-01
-weight: 1
+date: 2026-04-27
+weight: 2
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 2:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Hoàn thành các nội dung của khóa học **AWS Cloud for Beginner**.
+* Hiểu các dịch vụ nền tảng của AWS và cách triển khai tài nguyên cơ bản.
+* Thực hành tạo, quản lý và giám sát tài nguyên trên AWS.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+---
 
+### Các công việc cần triển khai:
 
-### Kết quả đạt được tuần 2:
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+|-----|----------|-------------|-----------------|----------------|
+| 2 | Module 01-01: Giới thiệu AWS Cloud, Global Infrastructure và mô hình Cloud Computing | 27/04/2026 | 27/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 3 | Module 01-02: AWS Identity and Access Management (IAM) và bảo mật tài khoản | 28/04/2026 | 28/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 4 | Lab 01: Tạo và cấu hình IAM User, User Group, MFA | 29/04/2026 | 29/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 5 | Lab 02: Khởi tạo Amazon EC2, cấu hình Security Group và kết nối EC2 | 30/04/2026 | 30/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 6 | Lab 03: Làm việc với Amazon S3 (Bucket, Object, Versioning) | 01/05/2026 | 01/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 7 | Lab 04: Theo dõi tài nguyên với CloudWatch và Billing Dashboard | 02/05/2026 | 02/05/2026 | https://cloudjourney.awsstudygroup.com/ |
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+---
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+## Chi tiết Lab đã thực hành
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+---
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+### Lab 01 – AWS IAM
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+#### 1. Quản lý người dùng và phân quyền
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+- Tạo IAM User.
+- Tạo IAM Group.
+- Gán User vào Group.
+- Cấp quyền thông qua Policy.
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+**Hiểu:**
 
+- Vai trò của IAM trong quản lý tài khoản AWS.
+- Nguyên tắc phân quyền tối thiểu (Least Privilege).
 
+---
+
+#### 2. Thiết lập bảo mật tài khoản
+
+- Kích hoạt MFA.
+- Thiết lập Password Policy.
+- Kiểm tra quyền truy cập của User.
+
+**Hiểu:**
+
+- Tăng cường bảo mật tài khoản AWS.
+- Giảm rủi ro truy cập trái phép.
+
+---
+
+### Lab 02 – Amazon EC2
+
+#### 1. Khởi tạo EC2 Instance
+
+- Chọn Amazon Machine Image (AMI).
+- Chọn Instance Type.
+- Tạo Key Pair.
+- Cấu hình Security Group.
+
+**Hiểu:**
+
+- Quy trình triển khai máy chủ ảo trên AWS.
+- Vai trò của AMI và Security Group.
+
+---
+
+#### 2. Kết nối và quản lý EC2
+
+- Kết nối EC2 bằng EC2 Instance Connect.
+- Theo dõi trạng thái Instance.
+- Khởi động, dừng và khởi động lại EC2.
+
+**Hiểu:**
+
+- Cách quản lý vòng đời của EC2 Instance.
+
+---
+
+### Lab 03 – Amazon S3
+
+#### 1. Quản lý Bucket
+
+- Tạo S3 Bucket.
+- Upload và Download Object.
+- Tạo thư mục lưu trữ.
+
+#### 2. Quản lý dữ liệu
+
+- Bật Versioning.
+- Thiết lập Bucket Policy.
+- Kiểm tra quyền truy cập đối tượng.
+
+**Hiểu:**
+
+- Nguyên lý lưu trữ Object Storage.
+- Cách bảo vệ và quản lý dữ liệu trên Amazon S3.
+
+---
+
+### Lab 04 – CloudWatch & Billing
+
+#### 1. Giám sát tài nguyên
+
+- Theo dõi CPU Utilization của EC2.
+- Xem Metrics trên CloudWatch.
+- Thiết lập Alarm cơ bản.
+
+#### 2. Quản lý chi phí
+
+- Truy cập Billing Dashboard.
+- Kiểm tra Free Tier Usage.
+- Theo dõi Cost Explorer.
+
+**Hiểu:**
+
+- Giám sát hiệu năng tài nguyên AWS.
+- Kiểm soát mức sử dụng để tránh phát sinh chi phí.
+
+---
+
+## Kết quả đạt được:
+
+- Hiểu kiến trúc tổng quan của AWS Cloud.
+- Nắm được cách quản lý người dùng và phân quyền bằng IAM.
+- Triển khai thành công EC2 Instance và kết nối từ AWS Console.
+- Thành thạo các thao tác cơ bản với Amazon S3:
+  - Tạo Bucket.
+  - Upload/Download dữ liệu.
+  - Kích hoạt Versioning.
+- Biết sử dụng CloudWatch để theo dõi tài nguyên.
+- Hiểu cách kiểm tra chi phí và mức sử dụng Free Tier thông qua AWS Billing Dashboard và Cost Explorer.
+- Hoàn thành các bài thực hành nền tảng, tạo tiền đề cho các nội dung nâng cao trong các tuần tiếp theo.

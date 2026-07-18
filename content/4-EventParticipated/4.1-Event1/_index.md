@@ -1,126 +1,142 @@
 ---
 title: "Event 1"
-date: 2024-01-01
+date: 2026-06-06
 weight: 1
 chapter: false
-pre: " <b> 4.1. </b> "
+pre: " <b> 4.3. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
+# Reflection Report: "First Cloud AI Journey - Community Sharing Day"
 
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+### Purpose of the Event
 
-### Event Objectives
+- Share practical knowledge and real-world experiences in Cloud Computing, Artificial Intelligence, and DevOps.
+- Introduce modern technologies such as Docker, GraphRAG, AWS WebSocket, and Machine Learning for Cybersecurity.
+- Learn career development experiences from industry professionals.
+- Strengthen the First Cloud AI Journey community through technical sharing sessions.
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+### List of Presentations
 
-### Speakers
-
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+- **From IT Helpdesk to Senior Sysadmin**
+  - Tran Trung Vinh
+- **Build GraphRAG Applications Using Amazon Bedrock and Amazon Neptune**
+  - Viet Phat
+- **The Art of Effective Teamwork**
+  - Truong Huy Phuoc
+- **Multiplayer in the Cloud: Connecting Godot Clients with AWS WebSockets**
+  - Nguyen Quoc Bao
+- **Machine Learning-based Network Intrusion Detection System (NIDS) on AWS**
+  - Le Hoang Gia Dai
+- **Docker – A Containerization Technology**
+  - Huynh Bao
 
 ### Key Highlights
 
-#### Identifying the drawbacks of legacy application architecture
+#### From IT Helpdesk to Senior Sysadmin
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+- Shared a real career journey from IT Helpdesk to System Administrator.
+- Highlighted essential skills such as Linux, Networking, and Troubleshooting.
+- Explained the transition from traditional system administration to Cloud and DevOps.
+- Emphasized the importance of continuous learning and building hands-on projects.
 
-#### Transitioning to modern application architecture – Microservices
+#### Build GraphRAG with Amazon Bedrock & Neptune
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+- Introduced the concept of Retrieval-Augmented Generation (RAG).
+- Explained GraphRAG and its capability for multi-hop reasoning.
+- Demonstrated how to build GraphRAG applications using Amazon Bedrock and Amazon Neptune.
+- Compared Fully Managed and Custom implementation approaches.
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
+#### The Art of Effective Teamwork
 
-#### Domain-Driven Design (DDD)
+- Highlighted the importance of teamwork in technology projects.
+- Introduced four key principles of effective teamwork:
+  - Clear and shared goals.
+  - The right person for the right task.
+  - Open communication and active listening.
+  - Personal accountability.
+- Demonstrated collaboration tools such as Trello, ClickUp, Slack, and Discord.
 
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
+#### Multiplayer in the Cloud with AWS WebSockets
 
-#### Event-Driven Architecture
+- Introduced multiplayer architecture using WebSocket technology.
+- Explained how API Gateway WebSocket, AWS Lambda, and DynamoDB work together.
+- Demonstrated real-time communication between game clients.
+- Shared practical challenges encountered when building multiplayer systems on AWS.
 
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
+#### AWS WAF + Machine Learning NIDS
 
-#### Compute Evolution
+- Introduced AWS WAF and the limitations of traditional rule-based protection.
+- Explained how Machine Learning can improve network intrusion detection.
+- Demonstrated the development of an NIDS using the CSE-CIC-IDS2018 dataset.
+- Presented an AWS architecture integrating EC2, Lambda, CloudWatch, Security Hub, and other AWS services.
 
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
+#### Docker – A Containerization Technology
 
-#### Amazon Q Developer
+- Compared Virtual Machines and Containers.
+- Explained how Docker enables consistent and efficient application deployment.
+- Introduced Docker Images, Containers, and Dockerfiles.
+- Presented Docker use cases in CI/CD pipelines, Microservices, and Cloud-native applications.
 
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
+### Knowledge and Skills Gained
 
-### Key Takeaways
+#### Soft Skills
 
-#### Design Mindset
+- Better understood the importance of teamwork in software development.
+- Improved communication and collaboration skills.
+- Gained additional motivation to build a clear career roadmap.
 
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
+#### Technical Skills
 
-#### Technical Architecture
+- Developed a deeper understanding of Docker and containerization technologies.
+- Learned how Amazon Bedrock and Neptune can be used to build GraphRAG applications.
+- Understood the architecture of multiplayer applications using AWS WebSocket services.
+- Learned how Machine Learning can enhance AWS WAF for modern cybersecurity solutions.
+- Gained practical insights into DevOps, System Administration, and Cloud Engineering.
 
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
+#### Career Development
 
-#### Modernization Strategy
+- Continue studying AWS Cloud and DevOps in greater depth.
+- Practice Docker and deploy Cloud-native applications.
+- Explore Generative AI and GraphRAG technologies further.
+- Develop both technical expertise and soft skills to meet industry expectations.
 
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
+### Practical Applications
 
-### Applying to Work
-
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
+- Use Docker to package and deploy personal software projects.
+- Apply DevOps principles and Infrastructure as Code in software development.
+- Build AI-powered chatbot applications using Amazon Bedrock and GraphRAG.
+- Design real-time applications using AWS WebSocket services.
+- Apply Cloud security solutions and Machine Learning techniques in future projects.
+- Continue improving teamwork skills through collaborative software development.
 
 ### Event Experience
 
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
+Participating in the **First Cloud AI Journey - Community Sharing Day** gave me the opportunity to explore many exciting topics related to Cloud Computing, Artificial Intelligence, DevOps, and Cybersecurity. The presentations were based on real-world experiences, making the content practical, engaging, and highly applicable.
 
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
+#### Most Memorable Takeaways
 
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
+- The **From IT Helpdesk to Senior Sysadmin** session inspired me to continuously learn and gain practical experience throughout my career journey.
+- The **GraphRAG** presentation broadened my understanding of how Generative AI can be combined with Knowledge Graphs to improve the quality and accuracy of AI-generated responses.
+- The **Docker** session helped me understand the concept of containerization and the advantages Docker provides for application development and deployment.
+- The **AWS WebSocket** presentation demonstrated how real-time multiplayer systems can be built efficiently using AWS services.
+- The **Machine Learning-based NIDS** session showed how Artificial Intelligence can be integrated with AWS services to improve cybersecurity and intrusion detection capabilities.
+- The **The Art of Effective Teamwork** presentation emphasized that successful projects depend not only on technical expertise but also on effective collaboration and communication among team members.
 
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
+#### Community Networking
 
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
+- Had the opportunity to interact with mentors, speakers, and other FCJ community members.
+- Learned valuable experiences related to studying, building projects, and career development.
+- Gained a better understanding of the technical and professional skills expected by the IT industry.
 
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
+#### Lessons Learned
 
-#### Some event photos
-*Add your event photos here*  
+- Learning technology should always be accompanied by hands-on practice through real projects.
+- Docker and DevOps have become essential skills in modern software engineering.
+- Artificial Intelligence is being widely applied in knowledge retrieval, software development, and cybersecurity.
+- Teamwork and communication skills are just as important as technical knowledge.
+- Continuous learning and building a strong portfolio create greater career opportunities.
 
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+#### Photos from the Event
+
+
+> Overall, the **First Cloud AI Journey - Community Sharing Day** provided valuable practical knowledge in Cloud Computing, Artificial Intelligence, DevOps, and Cybersecurity. The event not only expanded my understanding of modern technologies but also inspired me to continue learning, build more real-world projects, and better prepare myself for a future career as a Cloud Engineer.

@@ -27,7 +27,7 @@ chapter: false
 
 &emsp; **Internship Period:** From April 17, 2026 to July 10, 2026
 
-{{< img src="/images/7-Feedback/anh1.jpg" alt="Internship Photo" >}}
+![Internship Photo](/tannnhat-aws-nguyentannhat/images/7-Feedback/anh1.jpg)
 
 ### Report Contents
 

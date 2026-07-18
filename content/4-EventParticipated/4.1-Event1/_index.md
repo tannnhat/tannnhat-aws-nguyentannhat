@@ -137,6 +137,7 @@ Participating in the **First Cloud AI Journey - Community Sharing Day** gave me 
 - Continuous learning and building a strong portfolio create greater career opportunities.
 
 #### Photos from the Event
+{{< img src="/images/4-EventParticipated/4.1-Event1/nguyentannhat-2280602210_envent1.png" alt="AWS Serverless Architecture" >}}
 
 
 > Overall, the **First Cloud AI Journey - Community Sharing Day** provided valuable practical knowledge in Cloud Computing, Artificial Intelligence, DevOps, and Cybersecurity. The event not only expanded my understanding of modern technologies but also inspired me to continue learning, build more real-world projects, and better prepare myself for a future career as a Cloud Engineer.

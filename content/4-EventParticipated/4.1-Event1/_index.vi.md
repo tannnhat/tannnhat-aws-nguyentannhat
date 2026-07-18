@@ -138,6 +138,6 @@ Tham gia **First Cloud AI Journey - Community Sharing Day** giúp mình tiếp c
 
 #### Một số hình ảnh khi tham gia sự kiện
 
-{{< img src="images/4-EventParticipated/4.1-Event1/nguyentannhat-2280602210_envent1.png" alt="AWS Serverless Architecture" >}}
+{{< img src="/images/4-EventParticipated/4.1-Event1/nguyentannhat-2280602210_envent1.png" alt="AWS Serverless Architecture" >}}
 
 > Nhìn chung, buổi **First Cloud AI Journey - Community Sharing Day** mang lại nhiều kiến thức thực tiễn về Cloud Computing, Artificial Intelligence, DevOps và Cyber Security. Sự kiện không chỉ giúp mình hiểu rõ hơn về các công nghệ hiện đại mà còn truyền cảm hứng để tiếp tục học tập, xây dựng dự án thực tế và chuẩn bị tốt hơn cho con đường trở thành một Cloud Engineer trong tương lai.

@@ -140,6 +140,6 @@ Tham gia sự kiện **AWS Community Workshop** là một trải nghiệm rất 
 
 #### Một số hình ảnh khi tham gia sự kiện
 
-{{< img src="images/4-EventParticipated/4.2-Event2/event2.jpeg" alt="AWS Serverless Architecture" >}}
+{{< img src="images/4-EventParticipated/4.2-Event2/event2.jpg" alt="AWS Serverless Architecture" >}}
 
 > Tổng thể, sự kiện đã mang đến cho tôi nhiều kiến thức bổ ích về bảo mật ứng dụng, quản lý hạ tầng Cloud và giám sát hệ thống trên AWS. Bên cạnh đó, những chia sẻ về chứng chỉ AWS Cloud Practitioner cũng giúp tôi xây dựng được lộ trình học tập rõ ràng hơn. Đây là một sự kiện có giá trị thực tiễn cao, giúp tôi nâng cao kiến thức chuyên môn cũng như định hướng tốt hơn cho quá trình học tập và phát triển trong lĩnh vực Cloud Computing.

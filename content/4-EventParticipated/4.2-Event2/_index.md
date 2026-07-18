@@ -141,6 +141,6 @@ Attending the **AWS Community Workshop** was a valuable learning experience that
 
 #### Some event photos
 
-{{< img src="images/4-EventParticipated/4.2-Event2/event2.jpeg" alt="AWS Serverless Architecture" >}}
+{{< img src="images/4-EventParticipated/4.2-Event2/event2.jpg" alt="AWS Serverless Architecture" >}}
 
 > Overall, the workshop provided valuable insights into AWS security, cloud operations, monitoring, and certification preparation. It strengthened my understanding of modern cloud technologies and gave me practical knowledge that can be applied to future AWS projects and professional development.

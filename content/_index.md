@@ -1,44 +1,40 @@
 ---
 title: "Internship Report"
-date: 2024-01-01
+date: 2024-07-18
 weight: 1
 chapter: false
 ---
 
-    
 # Internship Report
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
+### Student Information
 
-### Student Information:
-&emsp; **Full Name:** Nguyen Van A
+&emsp; **Full Name:** Nguyễn Tấn Nhật
 
-&emsp; **Phone Number:** 0989888999 
+&emsp; **Phone Number:** 0931466917
 
-&emsp; **Email:** Anguyenvan@gmail.com
+&emsp; **Email:** nguyentannhat2004@gmail.com
 
-&emsp; **University:** Ho Chi Minh City University of Technology and Education
+&emsp; **University:** Ho Chi Minh City University of Technology (HUTECH)
 
 &emsp; **Major:** Information Technology
 
-&emsp; **Class:** AWS082025
+&emsp; **Class:** 22DTHD6
 
-&emsp; **Internship Company:** Amazon Web Services Vietnam Co., Ltd.
+&emsp; **Internship Organization:** Amazon Web Services Vietnam Co., Ltd.
 
 &emsp; **Internship Position:** FCJ Cloud Intern
 
-&emsp; **Internship Duration:** From 12/08/2025 to 12/11/2025
+&emsp; **Internship Period:** From April 17, 2026 to July 10, 2026
 
-![Your profile picture](/images/avatar.png)
+{{< img src="images/7-Feedback/anh1.jpg" alt="Internship Photo" >}}
 
-### Report Content
+### Report Contents
 
-1.  [Worklog](1-Worklog/)
-2.  [Proposal](2-Proposal/)
-3.  [Translated Blogs](3-BlogsTranslated/)
-4.  [Events Participated](4-EventParticipated/)
-5.  [Workshop](5-Workshop/)
-6.  [Self-evaluation](6-Self-evaluation/)
-7.  [Sharing and Feedback](7-Feedback/)
+1. [Worklog](1-Worklog/)
+2. [Proposal](2-Proposal/)
+3. [Translated Blog Posts](3-BlogsTranslated/)
+4. [Events Participated](4-EventParticipated/)
+5. [Workshop](5-Workshop/)
+6. [Self-Assessment](6-Self-evaluation/)
+7. [Feedback and Suggestions](7-Feedback/)

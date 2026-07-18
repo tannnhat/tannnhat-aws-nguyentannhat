@@ -25,7 +25,7 @@ chapter: false
 
 &emsp; **Thời gian thực tập:** Từ ngày 17/04/2026 đến ngày 10/07/2026
 
-![Internship Photo](/tannnhat-aws-nguyentannhat/images/7-Feedback/anh1.jpg)
+![Internship Photo](/images/7-Feedback/anh1.jpg)
 
 
 

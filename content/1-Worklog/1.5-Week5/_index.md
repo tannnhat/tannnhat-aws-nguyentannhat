@@ -6,10 +6,6 @@ chapter: false
 pre: " <b> 1.5. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report.
-{{% /notice %}}
-
 ### Week 5 Objectives:
 
 * Learn how to deploy applications using AWS managed services.

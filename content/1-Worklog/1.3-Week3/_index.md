@@ -6,10 +6,6 @@ chapter: false
 pre: " <b> 1.3. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report.
-{{% /notice %}}
-
 ### Week 3 Objectives:
 
 * Learn about AWS storage and database services.

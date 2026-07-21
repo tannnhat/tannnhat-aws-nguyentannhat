@@ -6,9 +6,7 @@ chapter: false
 pre: " <b> 7. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+
 
 > Sau quá trình tham gia chương trình **First Cloud AI Journey**, em đã có nhiều cơ hội học tập, thực hành và tham gia các hoạt động cộng đồng. Dưới đây là một số đánh giá và ý kiến cá nhân nhằm góp phần giúp chương trình ngày càng hoàn thiện và mang lại nhiều giá trị hơn cho các học viên trong tương lai.
 

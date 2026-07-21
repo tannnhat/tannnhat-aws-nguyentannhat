@@ -6,9 +6,7 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+
 
 Trong suốt quá trình tham gia chương trình **First Cloud AI Journey**, tôi đã có cơ hội học tập, thực hành và tiếp cận nhiều kiến thức thực tế về **AWS Cloud Computing, DevOps, Cloud Security và Generative AI**. Bên cạnh việc hoàn thành các bài thực hành (Hands-on Labs), tôi còn tham gia các buổi workshop, Community Sharing Day và nhiều hoạt động chia sẻ kiến thức từ các chuyên gia trong ngành.
 

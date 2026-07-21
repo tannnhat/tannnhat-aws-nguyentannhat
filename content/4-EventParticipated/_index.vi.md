@@ -6,9 +6,7 @@ chapter: false
 pre: " <b> 4. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+
 
 > Trong phần này, em tổng hợp các sự kiện đã tham gia trong quá trình học tập tại **First Cloud AI Journey**. Mỗi sự kiện mang đến những kiến thức thực tiễn về Cloud Computing, AWS, DevOps, AI và kỹ năng phát triển nghề nghiệp. Qua các buổi workshop và community sharing, em có cơ hội học hỏi từ các chuyên gia, cập nhật các công nghệ mới và tích lũy thêm nhiều kinh nghiệm hữu ích cho quá trình học tập cũng như định hướng nghề nghiệp trong tương lai.
 

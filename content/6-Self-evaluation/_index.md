@@ -6,9 +6,7 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
+
 
 During my participation in the **First Cloud AI Journey** program, I had the opportunity to study, practice, and apply cloud computing concepts through hands-on labs, workshops, and community activities. Throughout the program, I strengthened my understanding of **AWS Cloud Computing, DevOps, Cloud Security, Serverless Architecture, and Generative AI**, while gaining valuable practical experience from real-world scenarios.
 

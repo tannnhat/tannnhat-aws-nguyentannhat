@@ -6,9 +6,6 @@ chapter: false
 pre: " <b> 7. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
 
 > After participating in the **First Cloud AI Journey** program, I had many opportunities to learn, practice, and take part in community activities. Below are my personal evaluations and suggestions, which I hope will help improve the program and provide even greater value to future participants.
 

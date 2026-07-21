@@ -6,9 +6,7 @@ chapter: false
 pre: " <b> 3. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+
 
 Trong quá trình thực tập, tôi đã nghiên cứu, dịch và tổng hợp một số bài viết kỹ thuật liên quan đến AWS và Healthcare Data Lake nhằm nâng cao kiến thức về kiến trúc hệ thống, bảo mật, xử lý dữ liệu và các dịch vụ AWS. Nội dung các bài blog được tóm tắt như sau:
 

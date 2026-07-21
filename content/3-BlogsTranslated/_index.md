@@ -6,9 +6,7 @@ chapter: false
 pre: " <b> 3. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
+
 
 This section lists and briefly introduces the technical blogs that were translated during the internship. Through these translation tasks, I improved my understanding of AWS cloud services, modern software architecture, and best practices for designing cloud-native applications.
 

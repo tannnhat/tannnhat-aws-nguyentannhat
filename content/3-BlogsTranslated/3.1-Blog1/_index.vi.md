@@ -6,9 +6,7 @@ chapter: false
 pre: " <b> 3.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Nội dung dưới đây được tổng hợp và diễn giải từ tài liệu tham khảo nhằm phục vụ mục đích học tập.
-{{% /notice %}}
+
 
 # Xây dựng Healthcare Data Lake bằng kiến trúc Microservices
 

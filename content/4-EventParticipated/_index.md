@@ -6,9 +6,7 @@ chapter: false
 pre: " <b> 4. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
+
 
 > This section summarizes the events I participated in during the **First Cloud AI Journey** program. Each event provided valuable opportunities to learn about Cloud Computing, AWS, DevOps, Artificial Intelligence, and professional development. Through these workshops and community sharing sessions, I gained practical knowledge, learned from industry experts, and expanded my understanding of modern cloud technologies.
 

@@ -6,10 +6,6 @@ chapter: false
 pre: " <b> 1.9. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn.
-{{% /notice %}}
-
 ### Mục tiêu tuần 9:
 
 * Tìm hiểu các dịch vụ giám sát và bảo mật trên AWS.

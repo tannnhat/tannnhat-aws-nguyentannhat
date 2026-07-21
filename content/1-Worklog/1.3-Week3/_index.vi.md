@@ -6,10 +6,6 @@ chapter: false
 pre: " <b> 1.3. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn.
-{{% /notice %}}
-
 ### Mục tiêu tuần 3:
 
 * Tìm hiểu các dịch vụ lưu trữ và cơ sở dữ liệu trên AWS.

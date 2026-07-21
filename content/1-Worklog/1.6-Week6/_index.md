@@ -6,7 +6,6 @@ chapter: false
 pre: " <b> 1.6. </b> "
 ---
 
-
 ### Week 6 Objectives:
 
 * Learn the fundamentals of serverless computing on AWS.

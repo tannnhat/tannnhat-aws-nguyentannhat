@@ -6,8 +6,6 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-
-
 ## Tổng quan
 
 Trang này ghi lại quá trình học tập và thực hiện các nội dung trong chương trình **First Cloud Journey (FCJ)** kéo dài **12 tuần**. Trong suốt thời gian thực tập, tôi đã nghiên cứu kiến thức nền tảng về điện toán đám mây (Cloud Computing), làm quen với các dịch vụ của Amazon Web Services (AWS) và hoàn thành các bài thực hành theo lộ trình của AWS Study Group.

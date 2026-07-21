@@ -6,7 +6,6 @@ chapter: false
 pre: " <b> 1.1. </b> "
 ---
 
-
 ### Mục tiêu tuần 1:
 
 * Tìm hiểu chương trình AWS Free Tier và AWS Credit.

@@ -6,10 +6,6 @@ chapter: false
 pre: " <b> 1.9. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report.
-{{% /notice %}}
-
 ### Week 9 Objectives:
 
 * Learn the fundamentals of monitoring and security services on AWS.

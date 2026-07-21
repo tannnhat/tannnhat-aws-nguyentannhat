@@ -6,7 +6,6 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-
 ## Overview
 
 This section summarizes my learning journey throughout the **12-week First Cloud Journey (FCJ)** internship program. During the internship, I studied the fundamentals of Cloud Computing, explored Amazon Web Services (AWS), and completed hands-on laboratory exercises provided by the AWS Study Group.

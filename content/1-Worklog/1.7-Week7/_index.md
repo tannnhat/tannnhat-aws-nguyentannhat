@@ -6,10 +6,6 @@ chapter: false
 pre: " <b> 1.7. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report.
-{{% /notice %}}
-
 ### Week 7 Objectives:
 
 * Learn the fundamentals of containerization on AWS.

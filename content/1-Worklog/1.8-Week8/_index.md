@@ -6,7 +6,6 @@ chapter: false
 pre: " <b> 1.8. </b> "
 ---
 
-
 ### Week 8 Objectives:
 
 * Learn the fundamentals of DevOps practices and CI/CD on AWS.
